@@ -1,6 +1,17 @@
 #include <stdio.h>
 
 void main() {
+
+  struct Filme {
+    char titulo[60];
+    int codigo;
+    char statusDeLocacao[20];
+    float multaAplicada;
+    char dataLocacao[8];
+  };
+
+  struct Filme filmes[1000];
+
   printf("Menu de opcoes.\n");
   printf("1 - Cadastrar um novo filme.\n");
   printf("2 - Editar um filme existente.\n");
