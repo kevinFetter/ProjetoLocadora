@@ -2,6 +2,8 @@
 
 void main() {
 
+  int opcao;
+
   struct Filme {
     char titulo[60];
     int codigo;
@@ -19,4 +21,10 @@ void main() {
   printf("4 - Gerar relatorio.\n");
   printf("5 - Consultar informacoes do filme.\n");
   printf("6 - Gerar relatorio em formato PDF.\n");
+  printf("0 - Sair\n");
+
+  scanf("%d", &opcao);
+
+  printf("%d", opcao);
+
 }
